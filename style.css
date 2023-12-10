@@ -1,8 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=DM%20Sans:700|DM%20Sans:400');
+
 :root {
+    font-size: 18px;
+    font-family: 'DM Sans';
     --text: #ffffff;
     --background: #121212;
     --primary: #f5a8b8;
-    --secondary: #e94e6d;
-    --accent: #e51f47;
 }
-  
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+    font-family: 'DM Sans';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+
+/*Steam profile badge*/  
+.linkwrap {
+	position: relative;
+	display: inline-block;
+}
+
+.blocker {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.linkwrap iframe {
+    z-index: 2;
+}
